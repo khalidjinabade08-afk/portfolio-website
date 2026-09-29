@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+/* Left Right animation */
+@keyframes arrowMove {
+  0%, 100%{
+    transform: translateX(0);
+  }
+
+  50%{
+    transform: translateX(10px);
+  }
+}
+
+.animate-arrowMove{
+  animation: arrowMove 3s ease-in-out infinite;
+}
+
+/* Up Down animation */
+@keyframes  arrowDown{
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(10px);
+  }
+}
+
+.animate-arrowDown {
+  animation: arrowDown 3s ease-in-out infinite;
+}
